@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="page-grid">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="page-content-col">
+      <div class="news-list">
+        {{ range .Pages }}
+        <article class="news-item">
+          <h2 class="news-item-title">{{ .Title }}</h2>
+          {{ with .Date }}<div class="news-item-meta">{{ time.Format "January 2, 2006" . }}</div>{{ end }}
+          <p class="news-item-blurb">{{ .Summary | plainify }}</p>
+          <div class="news-item-cta">
+            <a href="{{ .RelPermalink }}" class="news-btn">Read More →</a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

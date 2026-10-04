@@ -1,0 +1,11 @@
+<article class="output-item">
+  <h3>{{ .Title }}</h3>
+  {{ with .Date }}<div class="meta">{{ time.Format "January 2006" . }}</div>{{ end }}
+  <div class="content">{{ .Content }}</div>
+  {{ with .Params.bibtex }}
+  <details class="bibtex">
+    <summary>BibTeX</summary>
+    <pre class="bibtex-entry">{{ . }}</pre>
+  </details>
+  {{ end }}
+</article>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "en-us" }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  {{- partial "header.html" . -}}
+  <main>
+    <div class="container">
+      {{- block "main" . }}{{ end -}}
+    </div>
+  </main>
+  {{- partial "footer.html" . -}}
+  {{- $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint -}}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+</body>
+</html>

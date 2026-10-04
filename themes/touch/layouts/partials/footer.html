@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="{{ "images/fullLogo_greyscale.svg" | relURL }}" alt="{{ site.Title }}">
+      </div>
+      <div>
+        <ul class="footer-nav-list">
+          {{- range site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div>
+        <div class="footer-logos">
+          <img src="{{ "images/logos/goldsmiths.png" | relURL }}" alt="Goldsmiths, University of London">
+          <img src="{{ "images/logos/udk_berlin.png" | relURL }}" alt="Universität der Künste Berlin">
+          <img src="{{ "images/logos/ahrc.png" | relURL }}" alt="Arts and Humanities Research Council">
+          <img src="{{ "images/logos/dfg.png" | relURL }}" alt="Deutsche Forschungsgemeinschaft">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

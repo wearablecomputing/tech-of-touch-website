@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="hero">
+  <img class="hero-logo" src="{{ "images/logo-yellow.svg" | relURL }}" alt="{{ .Title }}">
+  {{ with .Content }}
+    <div class="content">
+      {{ . }}
+    </div>
+  {{ end }}
+</section>
+
+{{ with .Params.intro }}
+<section class="intro container">
+  <div class="intro-collage">
+    {{ range .images }}
+    <figure class="intro-figure">
+      <img src="{{ .src | relURL }}" alt="{{ .alt }}">
+    </figure>
+    {{ end }}
+  </div>
+  <div class="intro-text">
+    {{ with .heading }}<h2 class="intro-heading">{{ . }}</h2>{{ end }}
+    {{ with .text }}<p class="intro-blurb">{{ . }}</p>{{ end }}
+    {{ with .button_text }}
+    <a class="btn" href="{{ ($.Params.intro.button_url | default "about/") | relURL }}">{{ . }}</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ partial "divider.html" (dict "image" (.Params.news_divider_image | default "")) }}
+
+{{ $news := where site.RegularPages "Section" "news" }}
+{{ if $news }}
+<section class="home-news container">
+  <h2 class="home-news-heading">News</h2>
+  <div class="news-list">
+    {{ range first 3 $news.ByDate.Reverse }}
+    <article class="news-item">
+      <h3 class="news-item-title">{{ .Title }}</h3>
+      <p class="news-item-blurb">{{ .Summary | plainify }}</p>
+      <div class="news-item-cta">
+        <a href="{{ .RelPermalink }}" class="btn">Read More →</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

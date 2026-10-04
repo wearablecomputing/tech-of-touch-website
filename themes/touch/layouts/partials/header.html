@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="container">
+    {{ if not .IsHome }}
+    <a href="{{ site.Home.RelPermalink }}" class="site-logo-link"><img class="site-logo" src="{{ "images/logotype.svg" | relURL }}" alt="{{ site.Title }}"></a>
+    {{ end }}
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-menu" id="navMenu">
+      {{- range site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</header>

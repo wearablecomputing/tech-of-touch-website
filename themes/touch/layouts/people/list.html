@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="page-grid">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="page-content-col">
+      {{ $groups := slice
+        (dict "key" "investigator" "title" "Investigators")
+        (dict "key" "research-associate" "title" "Research Associates")
+        (dict "key" "student-assistant" "title" "Student Assistants")
+        (dict "key" "collaborator" "title" "Collaborators")
+      }}
+      {{ range $groups }}
+        {{ $members := where $.Pages "Params.group" .key }}
+        {{ if $members }}
+        <h2 class="page-subtitle">{{ .title }}</h2>
+        <div class="people-grid">
+          {{ range $members }}
+          {{ $person := . }}
+          <article class="person-card">
+            <div class="person-photo">
+              {{ with $person.Params.photo }}<img src="{{ . | relURL }}" alt="{{ $person.Title }}">{{ end }}
+            </div>
+            <div class="person-info">
+              <h3>{{ $person.Title }}</h3>
+              {{ with $person.Params.role }}<div class="role">{{ . }}</div>{{ end }}
+              <p>{{ $person.Summary | plainify }}</p>
+              {{ partial "person-links.html" $person }}
+            </div>
+          </article>
+          {{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

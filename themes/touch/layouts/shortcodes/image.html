@@ -1,0 +1,5 @@
+{{/* Single image */}}
+<figure class="post-img post-img-single">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

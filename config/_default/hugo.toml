@@ -1,0 +1,34 @@
+baseURL = 'https://wearablecomputing.github.io/tech-of-touch-website/'
+locale = 'en-us'
+title = 'Technologies of Touch'
+theme = 'touch'
+buildFuture = true
+canonifyURLs = true
+
+[params]
+  description = 'Exploring the intersection of touch technology and human experience'
+
+[pagination]
+  pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'news'
+    name = 'News'
+    url = '/news/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'people'
+    name = 'People'
+    url = '/people/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'outputs'
+    name = 'Outputs'
+    url = '/outputs/'
+    weight = 40

@@ -1,0 +1,8 @@
+---
+title: "Nathan Adams"
+group: "student-assistant"
+weight: 4
+photo: "/images/people/nathan-adams.svg"
+scholar: "https://scholar.google.com/"
+website: "https://example.com"
+---
