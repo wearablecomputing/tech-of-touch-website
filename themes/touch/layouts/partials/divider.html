@@ -1,3 +1,3 @@
-{{/* Section divider. Pass a dict with an optional "image" path for a PNG-backed band. */}}
+{{/* Section divider. Pass a dict with an optional "image" path (e.g. "images/section_divider.png") for a PNG-backed band. */}}
 {{ $image := .image | default "" }}
-<div class="section-divider{{ if $image }} section-divider--image{{ end }}"{{ with $image }} style="background-image: url('{{ . }}');"{{ end }} aria-hidden="true"></div>
+<div class="section-divider{{ if $image }} section-divider--image{{ end }}"{{ with $image }} style="background-image: url('{{ . | absURL }}');"{{ end }} aria-hidden="true"></div>
