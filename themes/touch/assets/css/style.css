@@ -846,3 +846,44 @@ h3 { font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem); }
     aspect-ratio: 1;
   }
 }
+
+/* ===== Dark mode fallback ===== */
+/* Light mode is the default and is forced where possible via the
+   `color-scheme: light` opt-outs and the darkreader-lock meta tag.
+   This block only kicks in when the OS/browser reports dark. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #000000;
+    --color-bg-alt: #141414;
+    --color-text: #ffffff;
+    --color-text-light: #b3b3b3;
+    --color-border: #333333;
+  }
+
+  html {
+    background-color: #000000;
+  }
+
+  /* header wordmark is black; invert so it is visible on black */
+  .site-logo {
+    filter: invert(1);
+  }
+
+  /* body-text links are black in light mode; make them light on black */
+  .content a,
+  .bibtex summary {
+    color: #ffffff;
+  }
+
+  /* dark section-divider artwork */
+  .section-divider--image {
+    background-image: url('../images/section_divider_02_dark.png') !important;
+  }
+
+  /* buttons keep black text on the teal fill */
+  .btn,
+  .news-btn {
+    color: #000000;
+  }
+}
