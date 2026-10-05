@@ -11,6 +11,7 @@
   --yellow-shade-02: #9B7A03;
   --teal-primary: #00FFE3;
   --teal-shade: #00DEC6;
+  --teal-shade-02: #00A896;
   --color-bg: #ffffff;
   --color-bg-alt: #f5f5f5;
   --color-text: #000000;
@@ -860,10 +861,16 @@ html.dark .switch-text-dark {
 
 .page-back-link {
   display: inline-block;
-  font-size: 0.875rem;
-  color: var(--color-text-light);
-  margin-bottom: 0.5rem;
+  background: var(--teal-shade-02);
+  color: #000;
+  padding: 0.35rem 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8rem;
   text-decoration: none;
+  border-radius: 0;
+  margin-bottom: 2.5rem;
+  transition: background 0.2s;
 }
 
 .page-back-link:hover {
@@ -956,7 +963,8 @@ html.dark .section-divider--image {
 
 /* buttons keep black text on the teal fill */
 html.dark .btn,
-html.dark .news-btn {
+html.dark .news-btn,
+html.dark .page-back-link {
   color: #000000;
 }
 
