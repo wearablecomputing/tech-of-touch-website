@@ -11,7 +11,7 @@ On Day 1 we will welcome speakers who will talk on the topic of accessibility, c
 - Celine Kim, mdw, Vienna AT
 - Jay Pocknell, Sound Without Sight, Bristol UK
 
-On day 2 we welcome a number of performers to the Konzertsaal at UdK, to perform and talk about the role of touch in their practice. These performers include:
+On day 2 we welcome a number of performers to the Kammersaal at UdK, to perform and talk about the role of touch in their practice. These performers include:
 
 - Federico Visi
 - Dominique Baron-Bonarjee
