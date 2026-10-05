@@ -1,9 +1,7 @@
 {{ define "main" }}
 <section class="hero">
-  <picture>
-    <source srcset="{{ "images/logo_yellow_dark.png" | relURL }}" media="(prefers-color-scheme: dark)">
-    <img class="hero-logo" src="{{ "images/logo-yellow.svg" | relURL }}" alt="{{ .Title }}">
-  </picture>
+  <img class="hero-logo hero-logo-light" src="{{ "images/logo-yellow.svg" | relURL }}" alt="{{ .Title }}">
+  <img class="hero-logo hero-logo-dark" src="{{ "images/logo_yellow_dark.png" | relURL }}" alt="{{ .Title }}">
   {{ with .Content }}
     <div class="content">
       {{ . }}

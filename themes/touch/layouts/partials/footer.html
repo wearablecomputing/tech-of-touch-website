@@ -9,6 +9,14 @@
           {{- range site.Menus.main }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
           {{- end }}
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="themeToggle">
+              <span class="switch-track"><span class="switch-thumb"></span></span>
+              <span class="switch-text switch-text-light">Light Mode</span>
+              <span class="switch-text switch-text-dark">Dark Mode</span>
+            </label>
+          </li>
         </ul>
       </div>
       <div>
