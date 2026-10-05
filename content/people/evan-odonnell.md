@@ -1,6 +1,6 @@
 ---
 title: "Evan O'Donnell"
-group: "student-assistant"
+group: "research-associate"
 weight: 3
 photo: "/images/people/evan-odonnell.svg"
 scholar: "https://scholar.google.com/"
