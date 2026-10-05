@@ -986,3 +986,12 @@ html.dark .nav-menu li a:hover {
 html.dark .person-link {
   color: #000000;
 }
+
+/* ===== Mobile side gutters ===== */
+@media (max-width: 833px) {
+  .hero,
+  .page-grid {
+    padding-left: var(--page-margin);
+    padding-right: var(--page-margin);
+  }
+}
