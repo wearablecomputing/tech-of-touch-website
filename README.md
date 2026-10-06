@@ -1,5 +1,7 @@
 # Technologies of Touch — Website Guide
 
+## Temporarily hosted here: https://wearablecomputing.github.io/tech-of-touch-website/
+
 This website is built with **Hugo**. You don't need to be a programmer to update it, adding content only requires editing plain text files.
 
 There are two ways to make changes:
