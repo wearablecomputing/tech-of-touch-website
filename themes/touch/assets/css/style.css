@@ -438,6 +438,7 @@ h3 { font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem); }
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  scroll-margin-top: 2rem;
 }
 
 .page-subtitle:first-child {
@@ -709,6 +710,20 @@ html.dark .switch-text-dark {
 }
 
 /* ===== Outputs List ===== */
+.outputs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 833px) {
+  .outputs-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .outputs-list {
   display: flex;
   flex-direction: column;

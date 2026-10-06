@@ -3,6 +3,11 @@
   <div class="page-grid">
     <h1 class="page-title">{{ .Title }}</h1>
     <div class="page-content-col">
+      <nav class="outputs-nav">
+        <a class="btn" href="#publications">Publications</a>
+        <a class="btn" href="#workshops">Workshops & Events</a>
+        <a class="btn" href="#technology">Technology & Artefacts</a>
+      </nav>
       {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
       {{ $pubs := where .Pages "Params.output_type" "publication" }}
@@ -13,21 +18,21 @@
       {{ end }}
 
       {{ if $pubs }}
-      <h2 class="page-subtitle">Publications</h2>
+      <h2 class="page-subtitle" id="publications">Publications</h2>
       <div class="outputs-list">
         {{ range $pubs }}{{ partial "output-item.html" . }}{{ end }}
       </div>
       {{ end }}
 
       {{ if $workshops }}
-      <h2 class="page-subtitle">Workshops & Events</h2>
+      <h2 class="page-subtitle" id="workshops">Workshops & Events</h2>
       <div class="outputs-list">
         {{ range $workshops }}{{ partial "output-item.html" . }}{{ end }}
       </div>
       {{ end }}
 
       {{ if $tech }}
-      <h2 class="page-subtitle">Technology & Artefacts</h2>
+      <h2 class="page-subtitle" id="technology">Technology & Artefacts</h2>
       <div class="outputs-list">
         {{ range $tech }}{{ partial "output-item.html" . }}{{ end }}
       </div>
