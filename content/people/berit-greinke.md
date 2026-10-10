@@ -2,7 +2,7 @@
 title: "Berit Greinke"
 group: "investigator"
 weight: 1
-photo: "/images/people/berit-greinke.svg"
+photo: "/images/people/berit_image.jpg"
 scholar: "https://orcid.org/0000-0001-8838-2522"
 website: "http://wearablecomputing.udk-berlin.de"
 ---
