@@ -1,4 +1,4 @@
-baseURL = 'https://technologiesoftouch.com/'
+baseURL = 'https://www.technologiesoftouch.com/'
 locale = 'en-us'
 title = 'Technologies of Touch'
 theme = 'touch'
