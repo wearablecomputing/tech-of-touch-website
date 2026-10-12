@@ -1,4 +1,4 @@
-baseURL = 'https://wearablecomputing.github.io/tech-of-touch-website/'
+baseURL = 'https://technologiesoftouch.com/'
 locale = 'en-us'
 title = 'Technologies of Touch'
 theme = 'touch'
