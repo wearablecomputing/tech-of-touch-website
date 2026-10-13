@@ -9,7 +9,7 @@ Body and touch are products of a hybrid construction: even in early modern times
 In the contemporary everyday, touch has been appropriated by the technologies of late Western capitalism, making human contactnormative and reductive. Smartphones use touchscreens and biometrics to identify and track us. Digital touch, we argue, is brittleand lacks subtlety and sociality. How can we recover the sensuous, expressive dimension of touch? We will experiment withtechnologies of physiological sensing and conductive thread to create new instruments and musical performance systems. Our aimis to understand what changes when wearable touch technologies merge with artificially intelligent communication systems,drawing from knowledge across philosophy, embodied cognition, interactive music and fashion studies.
 
 
-## Research Focus
+## Research Objectives
 
 Our objectives are to: 
 - Explore group behaviour in music, and build up a hermeneutics of ‘feel.’ 
