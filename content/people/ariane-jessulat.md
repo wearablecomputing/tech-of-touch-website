@@ -2,8 +2,8 @@
 title: "Ariane Jeßulat"
 group: "investigator"
 weight: 3
-photo: "/images/people/ariane-jessulat.svg"
-scholar: "https://scholar.google.com/"
+photo: "/images/people/ariane jessulat_maulwerker2012_Foto_300dpi.jpg"
+scholar: "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=ariane+jessulat&btnG="
 website: "https://example.com"
 ---
 
