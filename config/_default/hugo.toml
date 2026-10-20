@@ -32,3 +32,6 @@ canonifyURLs = true
     name = 'Outputs'
     url = '/outputs/'
     weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true
