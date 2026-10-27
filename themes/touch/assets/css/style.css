@@ -979,6 +979,11 @@ html.dark .bibtex summary {
   color: #e0e0e0;
 }
 
+html.dark .content a:hover,
+html.dark .bibtex summary:hover {
+  color: #000000;
+}
+
 /* dark section-divider artwork */
 html.dark .section-divider--image {
   background-image: url('../images/section_divider_03_dark.png') !important;
