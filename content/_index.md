@@ -12,6 +12,6 @@ intro:
       alt: "Technologies of Touch"
     - src: "/images/heroes/TT_home_02.png"
       alt: "Technologies of Touch"
-    - src: "/images/heroes/hero03.png"
+    - src: "/images/heroes/TT_home_03.png"
       alt: "Technologies of Touch"
 ---
