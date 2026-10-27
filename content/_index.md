@@ -10,7 +10,7 @@ intro:
   images:
     - src: "/images/heroes/hero01.png"
       alt: "Technologies of Touch"
-    - src: "/images/heroes/hero02.png"
+    - src: "/images/heroes/TT_home_01.png"
       alt: "Technologies of Touch"
     - src: "/images/heroes/hero03.png"
       alt: "Technologies of Touch"
